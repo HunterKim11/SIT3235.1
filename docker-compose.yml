@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: solodomination/node-web-app
+    restart: always
+    ports: 
+    - 40000:3000
+    command: node server.js 
+    
